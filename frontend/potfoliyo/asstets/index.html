@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Rivera — Full Stack Developer & Cybersecurity Engineer. Portfolio showcasing projects, skills, and experience." />
+  <meta name="keywords" content="Full Stack Developer, Cybersecurity, React, Node.js, Python, Portfolio" />
+  <meta name="author" content="Alex Rivera" />
+  <meta property="og:title" content="Alex Rivera — Developer Portfolio" />
+  <meta property="og:description" content="Full Stack Developer & Cybersecurity Engineer" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f59e0b" />
+  <title>Rabin Humagain — Portfolio</title>
+  <link rel="stylesheet" href="../asstets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-logo">R H.</div>
+  <div class="loader-bar"><div class="loader-progress"></div></div>
+</div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">Rabin<span>Humagain</span></div>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#certifications">Certs</a>
+    <a href="#experience">Experience</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#resume" onclick="closeMobile()">Resume</a>
+  <a href="#certifications" onclick="closeMobile()">Certifications</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#social" onclick="closeMobile()">Social</a>
+  <a href="../contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-content" data-reveal>
+    <div class="hero-badge">Available for Opportunities</div>
+    <h1 class="hero-name">
+      Rabin<br>
+      <span class="accent">Humagain.</span>
+    </h1>
+    <div class="hero-title">
+      <span id="typed-text"></span><span class="typing-cursor"></span>
+    </div>
+    <p class="hero-intro">
+      I build <strong>secure, scalable</strong> digital experiences — from pixel-perfect frontends to resilient backend systems and hardened network infrastructure. Passionate about clean code and cyber defense.
+    </p>
+    <div class="hero-cta">
+      <a href="../asstets/resume.pdf" class="btn-primary" download>
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+      <a href="../contact.html#contact" class="btn-outline">
+        <i class="fas fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number" data-count="0">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="20">0</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="4">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-image-wrap">
+      <div class="hero-image-inner">
+        <div class="hero-avatar-placeholder">👨‍💻</div>
+      </div>
+    </div>
+    <div class="hero-float-card card-1">
+      <div class="float-icon">🛡️</div>
+      <div class="float-text">Cybersecurity Engineer</div>
+    </div>
+    <div class="hero-float-card card-2">
+      <div class="float-icon">⚡</div>
+      <div class="float-text">Full Stack Developer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-label">Who I Am</div>
+  <h2 class="section-title reveal">About Me</h2>
+  <div class="about-grid">
+    <div class="about-text reveal-left">
+      <p>
+        I'm <strong>Rabin Humagain</strong>, a passionate Full Stack Developer and Cybersecurity knowldge with a drive to build systems that are both <strong>high-performing</strong> and <strong>secure by design</strong>. I believe great software is invisible — it just works, perfectly.
+      </p>
+      <p>
+        My journey started with curiosity about how networks communicate, evolved into building web applications and deepened into understanding how systems can be protected and exploited. I bridge the gap between <strong>development</strong> and <strong>security</strong>.
+      </p>
+      <p>
+        When I'm not writing code or analyzing network traffic, I contribute to open-source projects, participate in CTF competitions and mentor junior developers in my community.
+      </p>
+      <div class="education-card">
+        <div class="edu-degree">Computer System Engineering</div>
+        <div class="edu-school">International School of Management and Tecshnology (ISMT)</div>
+        <div class="edu-year">📅 2024 – running.... </div>
+      </div>
+      <div class="education-card" style="margin-top:12px;">
+        <div class="edu-degree">Intermediate (+2)</div>
+        <div class="edu-school">Bal-Nikitan Higher Secondary School</div>
+        <div class="edu-year">📅 2017 – 2019 </div>
+      </div>
+      <div class="education-card" style="margin-top:12px;">
+        <div class="edu-degree">Secondary Education Examination (SEE)</div>
+        <div class="edu-school">Shree Karthari Secondary School.</div>
+        <div class="edu-year">📅 2017 </div>
+      </div>
+    </div>
+    <div class="about-highlights reveal-right">
+      <div class="highlight-card">
+        <div class="highlight-icon">🎯</div>
+        <div>
+          <div class="highlight-title">Career Goal</div>
+          <div class="highlight-text">To architect secure, cloud-native applications that scale globally while maintaining the highest security posture.</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🔒</div>
+        <div>
+          <div class="highlight-title">Security Focus</div>
+          <div class="highlight-text">Penetration testing, vulnerability assessment and implementing DevSecOps pipelines for continuous security.</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">🌐</div>
+        <div>
+          <div class="highlight-title">Full Stack Expertise</div>
+          <div class="highlight-text">React, Node.js, Python and PostgreSQL — building end-to-end solutions from database to deployment.</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">☁️</div>
+        <div>
+          <div class="highlight-title">Cloud Native</div>
+          <div class="highlight-text">AWS, Docker, Kubernetes, and CI/CD pipelines for resilient and auto-scaling infrastructure.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-label">What I Know</div>
+  <h2 class="section-title reveal">Skills & Technologies</h2>
+  <p class="section-sub reveal">A comprehensive toolkit built through years of hands-on development, security research, and infrastructure engineering.</p>
+  <div class="skills-grid">
+    <!-- Frontend -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🖥️</div>
+        <div class="skill-cat-title">Frontend</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">React / Next.js</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Vue.js</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+      <div class="tech-tags"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">Redux</span><span class="tech-tag">GraphQL</span><span class="tech-tag">Figma</span></div>
+    </div>
+    <!-- Backend -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">⚙️</div>
+        <div class="skill-cat-title">Backend</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Node.js / Express</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Python / Django</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">REST APIs</span><span class="skill-pct">93%</span></div><div class="skill-bar"><div class="skill-fill" data-width="93"></div></div></div>
+      <!-- <div class="skill-item"><div class="skill-info"><span class="skill-name">Go (Golang)</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div> -->
+      <div class="tech-tags"><span class="tech-tag">FastAPI</span><span class="tech-tag">Flask</span><span class="tech-tag">JWT</span><span class="tech-tag">WebSockets</span></div>
+    </div>
+    <!-- Database -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🗄️</div>
+        <div class="skill-cat-title">Database</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">PostgreSQL</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+      <!-- <div class="skill-item"><div class="skill-info"><span class="skill-name">MongoDB</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div> -->
+      <!-- <div class="skill-item"><div class="skill-info"><span class="skill-name">Redis</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div> -->
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+      <!-- <div class="tech-tags"><span class="tech-tag">Prisma</span><span class="tech-tag">Mongoose</span><span class="tech-tag">SQLite</span><span class="tech-tag">Elasticsearch</span></div> -->
+    </div>
+    <!-- Networking -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Networking</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">TCP/IP Protocols</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Cisco / Juniper</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Wireshark / Packet Analysis</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">VPN / Firewall Config</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+      <div class="tech-tags"><span class="tech-tag">DNS</span><span class="tech-tag">BGP</span><span class="tech-tag">OSPF</span><span class="tech-tag">SDN</span><span class="tech-tag">IPv6</span></div>
+    </div>
+    <!-- Cloud -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">☁️</div>
+        <div class="skill-cat-title">Cloud Computing</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">AWS (EC2, S3, Lambda)</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Docker / Kubernetes</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">CI/CD (GitHub Actions)</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+      <!-- <div class="skill-item"><div class="skill-info"><span class="skill-name">Google Cloud Platform</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div> -->
+      <div class="tech-tags"><span class="tech-tag">Terraform</span><span class="tech-tag">Nginx</span><span class="tech-tag">Linux</span><span class="tech-tag">Helm</span></div>
+    </div>
+    <!-- Cybersecurity -->
+    <div class="skill-category reveal">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🛡️</div>
+        <div class="skill-cat-title">Cybersecurity</div>
+      </div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Penetration Testing</span><span class="skill-pct">83%</span></div><div class="skill-bar"><div class="skill-fill" data-width="83"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">SIEM / SOC</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Vulnerability Assessment</span><span class="skill-pct">87%</span></div><div class="skill-bar"><div class="skill-fill" data-width="87"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Cryptography</span><span class="skill-pct">72%</span></div><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+      <div class="tech-tags"><span class="tech-tag">Kali Linux</span><span class="tech-tag">Metasploit</span><span class="tech-tag">Burp Suite</span><span class="tech-tag">OWASP</span><span class="tech-tag">CTF</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-label">What I've Built</div>
+  <h2 class="section-title reveal">Projects</h2>
+  <p class="section-sub reveal">A curated selection of projects spanning web development, security tools, and cloud infrastructure.</p>
+  <div class="project-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Dev</button>
+    <button class="filter-btn" data-filter="security">Security</button>
+    <button class="filter-btn" data-filter="cloud">Cloud</button>
+    <button class="filter-btn" data-filter="tools">Tools</button>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal" data-cat="web">
+      <div class="project-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">🛒</div>
+      <div class="project-body">
+        <div class="project-cat">Web Dev</div>
+        <div class="project-title">E-Commerce Platform</div>
+        <div class="project-desc">Full-stack marketplace with real-time inventory, Stripe payments, and admin dashboard. Handles 10k+ concurrent users.</div>
+        <div class="project-stack"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Redis</span><span class="project-tag">Stripe</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!--<div class="project-card reveal" data-cat="security">
+      <div class="project-img" style="background:linear-gradient(135deg,#0a0a0f,#1a0a0a);">🔍</div>
+      <div class="project-body">
+        <div class="project-cat">Security</div>
+        <div class="project-title">Network Vulnerability Scanner</div>
+        <div class="project-desc">Python-based automated vulnerability scanner with CVE database integration, risk scoring, and PDF reporting.</div>
+        <div class="project-stack"><span class="project-tag">Python</span><span class="project-tag">Nmap</span><span class="project-tag">CVE API</span><span class="project-tag">SQLite</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="cloud">
+      <div class="project-img" style="background:linear-gradient(135deg,#0a1a0a,#0f2020);">⚡</div>
+      <div class="project-body">
+        <div class="project-cat">Cloud</div>
+        <div class="project-title">Serverless API Gateway</div>
+        <div class="project-desc">AWS Lambda-based microservices architecture with auto-scaling, API rate limiting, and CloudWatch monitoring.</div>
+        <div class="project-stack"><span class="project-tag">AWS Lambda</span><span class="project-tag">API Gateway</span><span class="project-tag">DynamoDB</span><span class="project-tag">Terraform</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="tools">
+      <div class="project-img" style="background:linear-gradient(135deg,#1a0a1a,#0f0f2a);">🤖</div>
+      <div class="project-body">
+        <div class="project-cat">Tools</div>
+        <div class="project-title">DevSecOps Pipeline Builder</div>
+        <div class="project-desc">CLI tool to scaffold CI/CD pipelines with built-in SAST, DAST, and container scanning — GitHub Actions & Jenkins.</div>
+        <div class="project-stack"><span class="project-tag">Go</span><span class="project-tag">Docker</span><span class="project-tag">GitHub Actions</span><span class="project-tag">OWASP ZAP</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="web">
+      <div class="project-img" style="background:linear-gradient(135deg,#1a1400,#2a1a00);">📊</div>
+      <div class="project-body">
+        <div class="project-cat">Web Dev</div>
+        <div class="project-title">Real-Time Analytics Dashboard</div>
+        <div class="project-desc">Business intelligence dashboard with WebSocket live feeds, D3.js visualizations, and role-based access control.</div>
+        <div class="project-stack"><span class="project-tag">React</span><span class="project-tag">D3.js</span><span class="project-tag">FastAPI</span><span class="project-tag">WebSockets</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="security">
+      <div class="project-img" style="background:linear-gradient(135deg,#001a0a,#00140a);">🔐</div>
+      <div class="project-body">
+        <div class="project-cat">Security</div>
+        <div class="project-title">Zero-Trust Auth System</div>
+        <div class="project-desc">Multi-factor authentication platform with biometric support, behavioral analytics, and anomaly detection via ML.</div>
+        <div class="project-stack"><span class="project-tag">Python</span><span class="project-tag">TensorFlow</span><span class="project-tag">Redis</span><span class="project-tag">OAuth2</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- ===== RESUME =====
+<section id="resume">
+  <div class="section-label">My CV</div>
+  <h2 class="section-title reveal">Resume</h2>
+  <div class="resume-container reveal">
+    <div class="resume-header">
+      <div class="resume-title">📄 Curriculum Vitae — Rabin Humagain</div>
+      <a href="../asstets/resume.pdf" class="btn-primary" download>
+        <i class="fas fa-download"></i> Download PDF
+      </a>
+    </div>
+    <div class="resume-preview">
+      <div class="resume-mock">
+        <div class="resume-mock-name">Rabin Humagain</div>
+        <div class="resume-mock-title">Full Stack Developer & Cybersecurity Engineer</div>
+        <div class="resume-mock-contact">
+          <span>✉ rubhum2058@gmail.com</span>
+          <span>📞 +977 9762342058</span>
+          <span>🌐 </span>
+          <span>📍 Dhulikhel-9, Kavrepalanchwok, Nepal</span>
+        </div>
+        <div class="resume-mock-section">
+          <h3>Summary</h3>
+          <p>Full Stack Developer with 3+ years of experience building secure, scalable applications. Specializing in React, Node.js, Python, and cloud infrastructure. Certified in cybersecurity and network engineering.</p>
+        </div>
+        <div class="resume-mock-section">
+          <h3>Experience</h3>
+          <div class="resume-mock-item">
+            <strong>Junior Security Engineer</strong> — CyberGuard Solutions<br>
+            <span>Jan 2023 – Present • New York, NY</span><br>
+            Penetration testing, vulnerability assessments, and DevSecOps pipeline implementation.
+          </div>
+          <div class="resume-mock-item">
+            <strong>Full Stack Intern</strong> — TechFlow Inc.<br>
+            <span>Jun 2022 – Dec 2022 • Remote</span><br>
+            Built React dashboards and RESTful APIs serving 50k+ daily users.
+          </div>
+        </div>
+        <div class="resume-mock-section">
+          <h3>Education</h3>
+          <div class="resume-mock-item">
+            <strong>B.Sc. Computer Science & IT</strong> — State University of Technology<br>
+            <span>2019 – 2023 • GPA: 3.8/4.0</span>
+          </div>
+        </div>
+        <div class="resume-mock-section">
+          <h3>Key Skills</h3>
+          <p>React, Node.js, Python, AWS, Docker, Kubernetes, PostgreSQL, Penetration Testing, CI/CD, TypeScript</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  GitHub Contribution Graph
+  <div class="github-section reveal">
+    <div class="github-label">GitHub Activity — Last 12 months</div>
+    <div class="contrib-grid" id="contribGrid"></div>
+  </div> 
+</section> -->
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title reveal">Certifications</h2>
+  <p class="section-sub reveal">Industry-recognized credentials that validate my technical expertise and commitment to continuous learning.</p>
+  <div class="certs-grid">
+    <div class="cert-card reveal"><div class="cert-icon">☁️</div><div><div class="cert-name">AWS Solutions Architect – Associate</div><div class="cert-org">Amazon Web Services</div><div class="cert-date">Issued: Mar 2024 · Expires: Mar 2027</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🛡️</div><div><div class="cert-name">CompTIA Security+</div><div class="cert-org">CompTIA</div><div class="cert-date">Issued: Sep 2023 · No Expiry</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🌐</div><div><div class="cert-name">Cisco CCNA</div><div class="cert-org">Cisco</div><div class="cert-date">Issued: Jun 2023 · Expires: Jun 2026</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🐧</div><div><div class="cert-name">Linux Professional Institute (LPIC-1)</div><div class="cert-org">Linux Foundation</div><div class="cert-date">Issued: Jan 2023 · No Expiry</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🔐</div><div><div class="cert-name">Certified Ethical Hacker (CEH)</div><div class="cert-org">EC-Council</div><div class="cert-date">Issued: Nov 2023 · Expires: Nov 2026</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">⚡</div><div><div class="cert-name">Google Associate Cloud Engineer</div><div class="cert-org">Google Cloud</div><div class="cert-date">Issued: Apr 2024 · Expires: Apr 2027</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🐳</div><div><div class="cert-name">Docker Certified Associate</div><div class="cert-org">Docker Inc.</div><div class="cert-date">Issued: Jul 2023 · Expires: Jul 2025</div></div></div>
+    <div class="cert-card reveal"><div class="cert-icon">🔍</div><div><div class="cert-name">Offensive Security OSCP</div><div class="cert-org">Offensive Security</div><div class="cert-date">Issued: Feb 2024 · Lifetime</div></div></div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="section-label">Work History</div>
+  <h2 class="section-title reveal">Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">JAN 2022 – 2024</div>
+      <div class="timeline-role">Driving Tutor</div>
+      <div class="timeline-company">Shree Krishna Driving Center · Dhulikhel-9, Kavrepalanchwok, Nepal</div>
+      <div class="timeline-tasks">
+        <div class="timeline-task">Train students in safe driving practices</div>
+      </div>
+    </div>
+
+
+    <!-- <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">JAN 2023 – PRESENT</div>
+      <div class="timeline-role">Junior Security Engineer</div>
+      <div class="timeline-company">CyberGuard Solutions · New York, USA (On-site)</div>
+      <div class="timeline-tasks">
+        <div class="timeline-task">Conducted 20+ penetration tests across web applications, APIs, and network infrastructure.</div>
+        <div class="timeline-task">Implemented DevSecOps pipelines reducing vulnerability discovery time by 60%.</div>
+        <div class="timeline-task">Deployed SIEM solutions (Splunk) for real-time threat monitoring across client environments.</div>
+        <div class="timeline-task">Authored security assessment reports for C-suite stakeholders with remediation roadmaps.</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">JUN 2022 – DEC 2022</div>
+      <div class="timeline-role">Full Stack Developer Intern</div>
+      <div class="timeline-company">TechFlow Inc. · Remote</div>
+      <div class="timeline-tasks">
+        <div class="timeline-task">Built 3 React-based dashboards with real-time WebSocket feeds serving 50k+ daily users.</div>
+        <div class="timeline-task">Designed and documented 15+ RESTful API endpoints with comprehensive test coverage.</div>
+        <div class="timeline-task">Optimized PostgreSQL queries reducing average response time by 40%.</div>
+        <div class="timeline-task">Participated in Agile sprints and contributed to CI/CD pipeline maintenance.</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">JAN 2022 – MAY 2022</div>
+      <div class="timeline-role">Network Engineering Intern</div>
+      <div class="timeline-company">NetLink Systems · Chicago, USA (Hybrid)</div>
+      <div class="timeline-tasks">
+        <div class="timeline-task">Assisted in configuring and maintaining Cisco routers and switches across 5 enterprise sites.</div>
+        <div class="timeline-task">Performed network traffic analysis with Wireshark to identify and resolve bottlenecks.</div>
+        <div class="timeline-task">Documented network topology and created disaster recovery procedures.</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-period">SEP 2021 – DEC 2021</div>
+      <div class="timeline-role">IT Support & Web Developer (Freelance)</div>
+      <div class="timeline-company">Self-Employed · Remote</div>
+      <div class="timeline-tasks">
+        <div class="timeline-task">Delivered 8 client websites using HTML, CSS, JavaScript, and WordPress.</div>
+        <div class="timeline-task">Provided IT support and network setup for 5 small business clients.</div>
+        <div class="timeline-task">Maintained 100% client satisfaction with on-time delivery across all projects.</div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- ===== SOCIAL ===== -->
+<section id="social">
+  <div class="section-label">Connect</div>
+  <h2 class="section-title reveal">Social Media</h2>
+  <p class="section-sub reveal">Find me across the web — let's connect, collaborate, or just say hello!</p>
+  <div class="social-grid">
+    <a href="https://github.com/rabin0811" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(255,255,255,0.08)"><i class="fab fa-github" style="color:#fff"></i></div>
+      <div class="social-name">GitHub</div>
+      <div class="social-handle">@rabin0811</div>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(10,102,194,0.15)"><i class="fab fa-linkedin-in" style="color:#0a66c2"></i></div>
+      <div class="social-name">LinkedIn</div>
+      <div class="social-handle">Rabin Humagain</div>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(255,255,255,0.06)"><i class="fab fa-x-twitter" style="color:#fff"></i></div>
+      <div class="social-name">Twitter / X</div>
+      <div class="social-handle">@abi081126</div>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(225,48,108,0.1)"><i class="fab fa-instagram" style="color:#e1306c"></i></div>
+      <div class="social-name">Instagram</div>
+      <div class="social-handle">__ra_bin__</div>
+    </a>
+    <a href="https://facebook.com" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(24,119,242,0.1)"><i class="fab fa-facebook-f" style="color:#1877f2"></i></div>
+      <div class="social-name">Facebook</div>
+      <div class="social-handle">Rabin Humagain</div>
+    </a>
+    <a href="https://wa.me/15550000000" target="_blank" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(37,211,102,0.1)"><i class="fab fa-whatsapp" style="color:#25d366"></i></div>
+      <div class="social-name">WhatsApp</div>
+      <div class="social-handle">+977 9762342058</div>
+    </a>
+    <a href="mailto:alex@email.com" class="social-card reveal">
+      <div class="social-icon" style="background:rgba(245,158,11,0.1)"><i class="fas fa-envelope" style="color:#f59e0b"></i></div>
+      <div class="social-name">Email</div>
+      <div class="social-handle">rubhum2058@gmail.com</div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<!-- <section id="testimonials">
+  <div class="section-label">Kind Words</div>
+  <h2 class="section-title reveal">Testimonials</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Alex is one of the most thorough security engineers I've worked with. His penetration test reports were incredibly detailed and his remediation advice saved us from a potentially catastrophic breach.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">MK</div>
+        <div>
+          <div class="author-name">Michael Kim</div>
+          <div class="author-role">CTO at CyberGuard Solutions</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">The dashboard Alex built for us during his internship exceeded every expectation. Clean code, great documentation, and he delivered two weeks ahead of schedule. We brought him back as a consultant.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SR</div>
+        <div>
+          <div class="author-name">Sarah Rodriguez</div>
+          <div class="author-role">Engineering Manager at TechFlow</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Alex rebuilt our entire e-commerce backend in three months. Performance improved dramatically, and his focus on security gave us confidence to scale. Genuinely rare combination of skills.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JL</div>
+        <div>
+          <div class="author-name">James Liu</div>
+          <div class="author-role">Founder at ShopLocal</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-logo">RH.</div>
+  <div class="footer-copy">© 2025 Rabin Humagain. Crafted with ☕ and 💙 in Dhulikhel.</div>
+  <div class="footer-links">
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="mailto:alex@email.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="back-top" aria-label="Back to top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+<script src="../asstets/js/new.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if using any build tools)
+node_modules/
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS-generated
+ehthumbs.db
